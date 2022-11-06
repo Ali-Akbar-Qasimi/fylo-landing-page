@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+//  ### Primary
+
+$VeryDarkBlue: hsl(243, 87%, 12%);
+$DesaturatedBlue: hsl(238, 22%, 44%);
+
+//  ### Accent
+
+$BrightBlue: hsl(224, 93%, 58%);
+$ModerateCyan: hsl(170, 45%, 43%);
+
+//  ### Neutral
+
+$LightGrayishBlue: hsl(240, 75%, 98%);
+$LightGray: hsl(0, 0%, 75%);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans',sans-serif;
+}
+
+h1{
+    font-family: 'Releway', sans-serif;
+}
+
+p{
+    font-family: 'Open Sans',sans-serif;
+}
+.container{
+    width: 100%;
+    height: max-content;
+    min-height: 100vh;
+    .header{
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            width: 100px;
+            img{
+                width: 100%;
+            }
+        }
+        .links{
+            display: flex;
+            gap: 30px;
+            li{
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    color: $VeryDarkBlue;
+                }
+            }
+        }
+    }
+    .hero{
+        display: flex;
+        padding-inline: 30px;
+        width: 100%;
+        padding-top: 50px;
+        flex-direction: column;
+        gap: 30px;
+        background-image: url(./images/bg-curve-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: bottom;
+        padding-bottom: 200px;
+        .hero-image{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+        .hero-content{
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            .hero-content-header{
+                font-weight: 700;
+                font-size: 32px;
+                color: $VeryDarkBlue;
+            }
+            .hero-content-body{
+                font-size: 20px;
+                line-height: 30px;
+            }
+            .hero-content-form{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                .hero-content-input{
+                    width: 100%;
+                    padding: 15px 30px;
+                    outline: none;
+                    border: 1px solid black;
+                    border-radius: 5px;
+                }
+                .hero-content-btn{
+                    width: 100%;
+                    padding: 15px;
+                    background-color: $BrightBlue;
+                    color: white;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+    .stay-productive{
+        background-color: $LightGrayishBlue;
+        padding-top: 50px;
+        padding-bottom: 100px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .stay-productive-image{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            img{
+                width: 90%;
+            }
+        }
+        .stay-productive-content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 70px;
+            gap: 30px;
+            padding-inline: 30px;
+            .stay-productive-content-header{
+                font-size: 24px;
+                color: $VeryDarkBlue;
+            }
+            .stay-productive-content-body{
+                font-size: 18px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                color: $VeryDarkBlue;
+            }
+            .stay-productive-content-calltoaction{
+                display: flex;
+                border-bottom: 2px solid $ModerateCyan;
+                align-items: center;
+                gap: 5px;
+                padding-bottom: 5px;
+                color: $ModerateCyan;
+                cursor: pointer;
+                img{
+                    width: 30px;
+                }
+            }
+            .testimonial{
+                background-color: white;
+                width: 90%;
+                border-radius: 5px;
+                box-shadow: 0 0 5px 1px $LightGray;
+                padding: 30px 40px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                .quote-image{
+                    width: 20px;
+                }
+                .testimonial-body{
+                    color: $VeryDarkBlue;
+                    font-size: 13px;
+                    line-height: 25px;
+                }
+                .testimonial-info{
+                    display: flex;
+                    gap: 15px;
+                    align-items: center;
+                    .info-image{
+                        width: 50px;
+                        img{
+                            width: 100%;
+                            border-radius: 50%;
+                        }
+                    }
+                    .more-info{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+                        .name{
+                            font-family: 'Releway', sans-serif;
+                            font-weight: 700;
+                        }
+                        .career{
+                            font-size: 10px;
+                            color: $VeryDarkBlue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .get-started{
+        width: 100%;
+        padding: 50px 50px;
+        display: flex;
+        flex-direction: column;
+        background-color: $DesaturatedBlue;
+        color: white;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+        .get-started-content{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .get-started-header{
+                font-size: 24px;
+            }
+            .get-started-body{
+                font-size: 20px;
+                color: rgba(255, 255, 255, 0.756);
+            }
+        }
+        .get-started-form{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .input{
+                width: 100%;
+                padding: 15px 10px;
+                border-radius: 2px;
+                border: none;
+                outline: none;
+            }
+            .get-started-btn{
+                width: 100%;
+                background-color: $BrightBlue;
+                padding: 15px;
+                font-weight: 400;
+                border-radius: 2px;
+            }
+        }
+    }
+    .footer{
+        width: 100%;
+        background-color: $VeryDarkBlue;
+        display: grid;
+        color: white;
+        padding: 70px 50px;
+        gap: 50px;
+        .information{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            div{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+            }
+        }
+        .links{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            div{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+            li{
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+        .social-icons{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            gap: 20px;
+            i{
+                color: white;
+                border: 1px solid white;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 100%;
+            }
+        }
+    }
+}
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: -20px;
+    color: white;
+}
+.attribution a { color: hsl(228, 43%, 66%); }
+
+
+
+@media screen and (min-width:1000px){
+    .container{
+        .header{
+            padding: 50px 100px;
+        }
+        .hero{
+            flex-direction: row-reverse;
+            padding-inline: 100px;
+            padding-bottom: 300px;
+            background-image: url(./images/bg-curve-desktop.svg);
+            .hero-content{
+                text-align: start;
+                .hero-content-form{
+                    flex-direction: row;
+                    .hero-content-input{
+                        display: flex;
+                        flex-grow: 1;
+                    }
+                    .hero-content-btn{
+                        display: flex;
+                        width: 300px;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+        .stay-productive{
+            padding-inline: 100px;
+            flex-direction: row-reverse;
+            .stay-productive-content{
+                align-items: flex-start;
+                .stay-productive-content-header{
+                    font-size: 40px;
+                }
+            }
+        }
+        .get-started{
+            flex-direction: row;
+            align-items: flex-start;
+            text-align: start;
+            padding-inline: 100px;
+            gap: 100px;
+            .get-started-form{
+                .get-started-btn{
+                    width: max-content;
+                }
+            }
+        }
+        .footer{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+                'logo . .'
+                'info links socialIcons'
+            ;
+            padding-inline: 100px;
+            .logo{
+                grid-area: logo;
+            }
+            .information{
+                grid-area: info;
+            }
+            .links{
+                gap: 100px;
+                flex-direction: row;
+                grid-area: links;
+            }
+            .social-icons{
+                width: max-content;
+                grid-area: socialIcons;
+            }
+        }
+    }
+}
